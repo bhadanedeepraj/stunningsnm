@@ -1,15 +1,15 @@
 #!bin/bash
 
-echo "START : install NVM command "
-yum install -y gcc-c++ make
+echo "START : install NVM command"
+sudo yum install -y gcc-c++ make
 echo "END : install NVM command"
 
 echo "START : Download NODE 14"
-curl -sl https://rpm.nodesource.com/setup_14.x | sudo -E bash -
+sudo curl -sl https://rpm.nodesource.com/setup_14.x | sudo -E bash -
 echo "END : Download NODE 14"
 
 echo "START : INSTALL NODE 14"
-yum install -y nodejs
+sudo yum install -y nodejs
 echo "END : INSTALL NODE 14"
 
 
@@ -17,7 +17,7 @@ echo "END : INSTALL NODE 14"
 DIR = "/home/ec2-user/express-app"
 if [-d "$DIR" ]; then
     echo "${DIR} exists"
-else    
+else
     echo "Creating Directory ${DIR}"
     mkdir ${DIR}
 
