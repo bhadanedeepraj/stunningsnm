@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 
 const CreateForm = () => {
-    const [userName,setuserName] = useState("Deepraj");
-    const [password,setpassword] = useState("Bhadane");
+    const [userName,setuserName] = useState("");
+    const [password,setpassword] = useState("");
 
     const changeUserName = (e) => {
         console.log("In changeUserName:"+e.target.value);
