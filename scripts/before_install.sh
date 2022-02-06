@@ -20,7 +20,7 @@ if [-d "$DIR" ]; then
 else 
     echo "Creating Directory ${DIR}"
     mkdir ${DIR}
-END
+fi;
 
 echo "Stopping the NODE server"
 pkill node
