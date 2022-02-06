@@ -41,7 +41,7 @@ async function loginUser(credentials)
 {
     try {
         const res = await axios.get(
-            "http://localhost:8080/api/users",
+            "http://3.129.16.163:8080/api/users",
             {
                 headers: {'Content-Type': 'application/json'},
                 method: 'GET'
