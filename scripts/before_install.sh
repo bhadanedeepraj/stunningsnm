@@ -17,10 +17,10 @@ echo "END : INSTALL NODE 14"
 DIR = "/home/ec2-user/express-app"
 if [-d "$DIR" ]; then
     echo "${DIR} exists"
-else
+else 
     echo "Creating Directory ${DIR}"
     mkdir ${DIR}
-;
+END
 
 echo "Stopping the NODE server"
 pkill node
