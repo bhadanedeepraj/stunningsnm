@@ -15,9 +15,9 @@ echo "END : INSTALL NODE 14"
 
 #Create Directory if not there
 DIR = "/home/ec2-user/express-app"
-if [-d "$DIR" ] then
+if [-d "$DIR" ]; then
     echo "${DIR} exists"
-else
+else;
     echo "Creating Directory ${DIR}"
     mkdir ${DIR}
 
