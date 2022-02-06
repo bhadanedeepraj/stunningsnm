@@ -1,15 +1,15 @@
 #!bin/bash
 
 echo "START : install NVM command"
-sudo yum install -y gcc-c++ make
+yum install -y gcc-c++ make
 echo "END : install NVM command"
 
 echo "START : Download NODE 14"
-sudo curl -sl https://rpm.nodesource.com/setup_14.x | sudo -E bash -
+curl -sl https://rpm.nodesource.com/setup_14.x | sudo -E bash -
 echo "END : Download NODE 14"
 
 echo "START : INSTALL NODE 14"
-sudo yum install -y nodejs
+yum install -y nodejs
 echo "END : INSTALL NODE 14"
 
 
